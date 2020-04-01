@@ -1,0 +1,572 @@
+11:26:09 **** Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+Building file: ../src/board.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_board_nxp_lpcxpresso_1769\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/board.d" -MT"src/board.o" -MT"src/board.d" -o "src/board.o" "../src/board.c"
+../src/board.c: In function 'Board_I2C_Init':
+../src/board.c:267:2: warning: enumeration value 'I2C_NUM_INTERFACE' not handled in switch [-Wswitch]
+  switch (id) {
+  ^
+Finished building: ../src/board.c
+ 
+Building file: ../src/board_sysinit.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_board_nxp_lpcxpresso_1769\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/board_sysinit.d" -MT"src/board_sysinit.o" -MT"src/board_sysinit.d" -o "src/board_sysinit.o" "../src/board_sysinit.c"
+Finished building: ../src/board_sysinit.c
+ 
+Building file: ../src/lpc_phy_smsc87x0.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_board_nxp_lpcxpresso_1769\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/lpc_phy_smsc87x0.d" -MT"src/lpc_phy_smsc87x0.o" -MT"src/lpc_phy_smsc87x0.d" -o "src/lpc_phy_smsc87x0.o" "../src/lpc_phy_smsc87x0.c"
+Finished building: ../src/lpc_phy_smsc87x0.c
+ 
+Building target: liblpc_board_nxp_lpcxpresso_1769.a
+Invoking: MCU Archiver
+arm-none-eabi-ar -r  "liblpc_board_nxp_lpcxpresso_1769.a"  ./src/board.o ./src/board_sysinit.o ./src/lpc_phy_smsc87x0.o   
+c:\nxp\LPCXpresso_8.0.0_526\lpcxpresso\tools\bin\arm-none-eabi-ar.exe: creating liblpc_board_nxp_lpcxpresso_1769.a
+Finished building target: liblpc_board_nxp_lpcxpresso_1769.a
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "liblpc_board_nxp_lpcxpresso_1769.a" ; # arm-none-eabi-objdump -h -S "liblpc_board_nxp_lpcxpresso_1769.a" >"liblpc_board_nxp_lpcxpresso_1769.lss"
+   text	   data	    bss	    dec	    hex	filename
+   2197	      0	      0	   2197	    895	board.o (ex liblpc_board_nxp_lpcxpresso_1769.a)
+    196	      0	      0	    196	     c4	board_sysinit.o (ex liblpc_board_nxp_lpcxpresso_1769.a)
+    860	      0	     18	    878	    36e	lpc_phy_smsc87x0.o (ex liblpc_board_nxp_lpcxpresso_1769.a)
+ 
+11:26:10 **** Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+Building file: ../src/adc_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/adc_17xx_40xx.d" -MT"src/adc_17xx_40xx.o" -MT"src/adc_17xx_40xx.d" -o "src/adc_17xx_40xx.o" "../src/adc_17xx_40xx.c"
+Finished building: ../src/adc_17xx_40xx.c
+ 
+Building file: ../src/can_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/can_17xx_40xx.d" -MT"src/can_17xx_40xx.o" -MT"src/can_17xx_40xx.d" -o "src/can_17xx_40xx.o" "../src/can_17xx_40xx.c"
+../src/can_17xx_40xx.c: In function 'Chip_CAN_Init':
+../src/can_17xx_40xx.c:751:20: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  volatile uint32_t i;
+                    ^
+Finished building: ../src/can_17xx_40xx.c
+ 
+Building file: ../src/chip_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/chip_17xx_40xx.d" -MT"src/chip_17xx_40xx.o" -MT"src/chip_17xx_40xx.d" -o "src/chip_17xx_40xx.o" "../src/chip_17xx_40xx.c"
+Finished building: ../src/chip_17xx_40xx.c
+ 
+Building file: ../src/clock_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/clock_17xx_40xx.d" -MT"src/clock_17xx_40xx.o" -MT"src/clock_17xx_40xx.d" -o "src/clock_17xx_40xx.o" "../src/clock_17xx_40xx.c"
+../src/clock_17xx_40xx.c: In function 'Chip_Clock_GetSYSCLKRate':
+../src/clock_17xx_40xx.c:320:2: warning: enumeration value 'SYSCTL_PLLCLKSRC_RESERVED2' not handled in switch [-Wswitch]
+  switch (Chip_Clock_GetMainPLLSource()) {
+  ^
+Finished building: ../src/clock_17xx_40xx.c
+ 
+Building file: ../src/cmp_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/cmp_17xx_40xx.d" -MT"src/cmp_17xx_40xx.o" -MT"src/cmp_17xx_40xx.d" -o "src/cmp_17xx_40xx.o" "../src/cmp_17xx_40xx.c"
+Finished building: ../src/cmp_17xx_40xx.c
+ 
+Building file: ../src/crc_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/crc_17xx_40xx.d" -MT"src/crc_17xx_40xx.o" -MT"src/crc_17xx_40xx.d" -o "src/crc_17xx_40xx.o" "../src/crc_17xx_40xx.c"
+Finished building: ../src/crc_17xx_40xx.c
+ 
+Building file: ../src/dac_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/dac_17xx_40xx.d" -MT"src/dac_17xx_40xx.o" -MT"src/dac_17xx_40xx.d" -o "src/dac_17xx_40xx.o" "../src/dac_17xx_40xx.c"
+Finished building: ../src/dac_17xx_40xx.c
+ 
+Building file: ../src/eeprom_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/eeprom_17xx_40xx.d" -MT"src/eeprom_17xx_40xx.o" -MT"src/eeprom_17xx_40xx.d" -o "src/eeprom_17xx_40xx.o" "../src/eeprom_17xx_40xx.c"
+Finished building: ../src/eeprom_17xx_40xx.c
+ 
+Building file: ../src/emc_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/emc_17xx_40xx.d" -MT"src/emc_17xx_40xx.o" -MT"src/emc_17xx_40xx.d" -o "src/emc_17xx_40xx.o" "../src/emc_17xx_40xx.c"
+Finished building: ../src/emc_17xx_40xx.c
+ 
+Building file: ../src/enet_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/enet_17xx_40xx.d" -MT"src/enet_17xx_40xx.o" -MT"src/enet_17xx_40xx.d" -o "src/enet_17xx_40xx.o" "../src/enet_17xx_40xx.c"
+Finished building: ../src/enet_17xx_40xx.c
+ 
+Building file: ../src/gpdma_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/gpdma_17xx_40xx.d" -MT"src/gpdma_17xx_40xx.o" -MT"src/gpdma_17xx_40xx.d" -o "src/gpdma_17xx_40xx.o" "../src/gpdma_17xx_40xx.c"
+Finished building: ../src/gpdma_17xx_40xx.c
+ 
+Building file: ../src/gpio_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/gpio_17xx_40xx.d" -MT"src/gpio_17xx_40xx.o" -MT"src/gpio_17xx_40xx.d" -o "src/gpio_17xx_40xx.o" "../src/gpio_17xx_40xx.c"
+Finished building: ../src/gpio_17xx_40xx.c
+ 
+Building file: ../src/gpioint_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/gpioint_17xx_40xx.d" -MT"src/gpioint_17xx_40xx.o" -MT"src/gpioint_17xx_40xx.d" -o "src/gpioint_17xx_40xx.o" "../src/gpioint_17xx_40xx.c"
+Finished building: ../src/gpioint_17xx_40xx.c
+ 
+Building file: ../src/i2c_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/i2c_17xx_40xx.d" -MT"src/i2c_17xx_40xx.o" -MT"src/i2c_17xx_40xx.d" -o "src/i2c_17xx_40xx.o" "../src/i2c_17xx_40xx.c"
+Finished building: ../src/i2c_17xx_40xx.c
+ 
+Building file: ../src/i2s_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/i2s_17xx_40xx.d" -MT"src/i2s_17xx_40xx.o" -MT"src/i2s_17xx_40xx.d" -o "src/i2s_17xx_40xx.o" "../src/i2s_17xx_40xx.c"
+Finished building: ../src/i2s_17xx_40xx.c
+ 
+Building file: ../src/iap.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/iap.d" -MT"src/iap.o" -MT"src/iap.d" -o "src/iap.o" "../src/iap.c"
+Finished building: ../src/iap.c
+ 
+Building file: ../src/iocon_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/iocon_17xx_40xx.d" -MT"src/iocon_17xx_40xx.o" -MT"src/iocon_17xx_40xx.d" -o "src/iocon_17xx_40xx.o" "../src/iocon_17xx_40xx.c"
+Finished building: ../src/iocon_17xx_40xx.c
+ 
+Building file: ../src/lcd_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/lcd_17xx_40xx.d" -MT"src/lcd_17xx_40xx.o" -MT"src/lcd_17xx_40xx.d" -o "src/lcd_17xx_40xx.o" "../src/lcd_17xx_40xx.c"
+Finished building: ../src/lcd_17xx_40xx.c
+ 
+Building file: ../src/pmu_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/pmu_17xx_40xx.d" -MT"src/pmu_17xx_40xx.o" -MT"src/pmu_17xx_40xx.d" -o "src/pmu_17xx_40xx.o" "../src/pmu_17xx_40xx.c"
+Finished building: ../src/pmu_17xx_40xx.c
+ 
+Building file: ../src/ring_buffer.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/ring_buffer.d" -MT"src/ring_buffer.o" -MT"src/ring_buffer.d" -o "src/ring_buffer.o" "../src/ring_buffer.c"
+Finished building: ../src/ring_buffer.c
+ 
+Building file: ../src/ritimer_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/ritimer_17xx_40xx.d" -MT"src/ritimer_17xx_40xx.o" -MT"src/ritimer_17xx_40xx.d" -o "src/ritimer_17xx_40xx.o" "../src/ritimer_17xx_40xx.c"
+Finished building: ../src/ritimer_17xx_40xx.c
+ 
+Building file: ../src/rtc_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/rtc_17xx_40xx.d" -MT"src/rtc_17xx_40xx.o" -MT"src/rtc_17xx_40xx.d" -o "src/rtc_17xx_40xx.o" "../src/rtc_17xx_40xx.c"
+Finished building: ../src/rtc_17xx_40xx.c
+ 
+Building file: ../src/sdc_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/sdc_17xx_40xx.d" -MT"src/sdc_17xx_40xx.o" -MT"src/sdc_17xx_40xx.d" -o "src/sdc_17xx_40xx.o" "../src/sdc_17xx_40xx.c"
+Finished building: ../src/sdc_17xx_40xx.c
+ 
+Building file: ../src/sdmmc_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/sdmmc_17xx_40xx.d" -MT"src/sdmmc_17xx_40xx.o" -MT"src/sdmmc_17xx_40xx.d" -o "src/sdmmc_17xx_40xx.o" "../src/sdmmc_17xx_40xx.c"
+Finished building: ../src/sdmmc_17xx_40xx.c
+ 
+Building file: ../src/spi_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/spi_17xx_40xx.d" -MT"src/spi_17xx_40xx.o" -MT"src/spi_17xx_40xx.d" -o "src/spi_17xx_40xx.o" "../src/spi_17xx_40xx.c"
+../src/spi_17xx_40xx.c: In function 'Chip_SPI_Int_FlushData':
+../src/spi_17xx_40xx.c:138:20: warning: variable 'tmp' set but not used [-Wunused-but-set-variable]
+  volatile uint32_t tmp;
+                    ^
+Finished building: ../src/spi_17xx_40xx.c
+ 
+Building file: ../src/ssp_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/ssp_17xx_40xx.d" -MT"src/ssp_17xx_40xx.o" -MT"src/ssp_17xx_40xx.d" -o "src/ssp_17xx_40xx.o" "../src/ssp_17xx_40xx.c"
+Finished building: ../src/ssp_17xx_40xx.c
+ 
+Building file: ../src/stopwatch_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/stopwatch_17xx_40xx.d" -MT"src/stopwatch_17xx_40xx.o" -MT"src/stopwatch_17xx_40xx.d" -o "src/stopwatch_17xx_40xx.o" "../src/stopwatch_17xx_40xx.c"
+Finished building: ../src/stopwatch_17xx_40xx.c
+ 
+Building file: ../src/sysctl_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/sysctl_17xx_40xx.d" -MT"src/sysctl_17xx_40xx.o" -MT"src/sysctl_17xx_40xx.d" -o "src/sysctl_17xx_40xx.o" "../src/sysctl_17xx_40xx.c"
+Finished building: ../src/sysctl_17xx_40xx.c
+ 
+Building file: ../src/sysinit_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/sysinit_17xx_40xx.d" -MT"src/sysinit_17xx_40xx.o" -MT"src/sysinit_17xx_40xx.d" -o "src/sysinit_17xx_40xx.o" "../src/sysinit_17xx_40xx.c"
+Finished building: ../src/sysinit_17xx_40xx.c
+ 
+Building file: ../src/timer_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/timer_17xx_40xx.d" -MT"src/timer_17xx_40xx.o" -MT"src/timer_17xx_40xx.d" -o "src/timer_17xx_40xx.o" "../src/timer_17xx_40xx.c"
+Finished building: ../src/timer_17xx_40xx.c
+ 
+Building file: ../src/uart_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/uart_17xx_40xx.d" -MT"src/uart_17xx_40xx.o" -MT"src/uart_17xx_40xx.d" -o "src/uart_17xx_40xx.o" "../src/uart_17xx_40xx.c"
+Finished building: ../src/uart_17xx_40xx.c
+ 
+Building file: ../src/wwdt_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/wwdt_17xx_40xx.d" -MT"src/wwdt_17xx_40xx.o" -MT"src/wwdt_17xx_40xx.d" -o "src/wwdt_17xx_40xx.o" "../src/wwdt_17xx_40xx.c"
+Finished building: ../src/wwdt_17xx_40xx.c
+ 
+Building target: liblpc_chip_175x_6x.a
+Invoking: MCU Archiver
+arm-none-eabi-ar -r  "liblpc_chip_175x_6x.a"  ./src/adc_17xx_40xx.o ./src/can_17xx_40xx.o ./src/chip_17xx_40xx.o ./src/clock_17xx_40xx.o ./src/cmp_17xx_40xx.o ./src/crc_17xx_40xx.o ./src/dac_17xx_40xx.o ./src/eeprom_17xx_40xx.o ./src/emc_17xx_40xx.o ./src/enet_17xx_40xx.o ./src/gpdma_17xx_40xx.o ./src/gpio_17xx_40xx.o ./src/gpioint_17xx_40xx.o ./src/i2c_17xx_40xx.o ./src/i2s_17xx_40xx.o ./src/iap.o ./src/iocon_17xx_40xx.o ./src/lcd_17xx_40xx.o ./src/pmu_17xx_40xx.o ./src/ring_buffer.o ./src/ritimer_17xx_40xx.o ./src/rtc_17xx_40xx.o ./src/sdc_17xx_40xx.o ./src/sdmmc_17xx_40xx.o ./src/spi_17xx_40xx.o ./src/ssp_17xx_40xx.o ./src/stopwatch_17xx_40xx.o ./src/sysctl_17xx_40xx.o ./src/sysinit_17xx_40xx.o ./src/timer_17xx_40xx.o ./src/uart_17xx_40xx.o ./src/wwdt_17xx_40xx.o   
+c:\nxp\LPCXpresso_8.0.0_526\lpcxpresso\tools\bin\arm-none-eabi-ar.exe: creating liblpc_chip_175x_6x.a
+Finished building target: liblpc_chip_175x_6x.a
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "liblpc_chip_175x_6x.a" ; # arm-none-eabi-objdump -h -S "liblpc_chip_175x_6x.a" >"liblpc_chip_175x_6x.lss"
+   text	   data	    bss	    dec	    hex	filename
+    932	      0	      0	    932	    3a4	adc_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+   8692	      0	      0	   8692	   21f4	can_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+    176	      0	      0	    176	     b0	chip_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+   1620	      0	      0	   1620	    654	clock_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+      0	      0	      0	      0	      0	cmp_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+      0	      0	      0	      0	      0	crc_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+    144	      0	      0	    144	     90	dac_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+      0	      0	      0	      0	      0	eeprom_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+      0	      0	      0	      0	      0	emc_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+   1115	      0	      4	   1119	    45f	enet_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+   2272	     96	      8	   2376	    948	gpdma_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+      0	      0	      0	      0	      0	gpio_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+      0	      0	      0	      0	      0	gpioint_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+   3679	     84	    120	   3883	    f2b	i2c_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+   1464	      0	      0	   1464	    5b8	i2s_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+    556	      0	      0	    556	    22c	iap.o (ex liblpc_chip_175x_6x.a)
+    296	      0	      0	    296	    128	iocon_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+      0	      0	      0	      0	      0	lcd_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+    264	      0	      0	    264	    108	pmu_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+    980	      0	      0	    980	    3d4	ring_buffer.o (ex liblpc_chip_175x_6x.a)
+    240	      0	      0	    240	     f0	ritimer_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+    748	      0	      0	    748	    2ec	rtc_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+      0	      0	      0	      0	      0	sdc_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+      0	      0	      0	      0	      0	sdmmc_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+   1044	      0	      0	   1044	    414	spi_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+   2288	      0	      0	   2288	    8f0	ssp_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+    388	      0	     12	    400	    190	stopwatch_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+     48	      0	      0	     48	     30	sysctl_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+    484	      0	      0	    484	    1e4	sysinit_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+    308	      0	      0	    308	    134	timer_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+   2304	      0	      1	   2305	    901	uart_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+     96	      0	      0	     96	     60	wwdt_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+ 
+11:26:19 **** Build of configuration Debug for project freertos_blinky ****
+make -r all 
+Building file: ../freertos/src/FreeRTOSCommonHooks.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_board_nxp_lpcxpresso_1769\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\freertos_blinky\example\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\freertos_blinky\freertos\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"freertos/src/FreeRTOSCommonHooks.d" -MT"freertos/src/FreeRTOSCommonHooks.o" -MT"freertos/src/FreeRTOSCommonHooks.d" -o "freertos/src/FreeRTOSCommonHooks.o" "../freertos/src/FreeRTOSCommonHooks.c"
+Finished building: ../freertos/src/FreeRTOSCommonHooks.c
+ 
+Building file: ../freertos/src/heap_3.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_board_nxp_lpcxpresso_1769\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\freertos_blinky\example\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\freertos_blinky\freertos\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"freertos/src/heap_3.d" -MT"freertos/src/heap_3.o" -MT"freertos/src/heap_3.d" -o "freertos/src/heap_3.o" "../freertos/src/heap_3.c"
+Finished building: ../freertos/src/heap_3.c
+ 
+Building file: ../freertos/src/list.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_board_nxp_lpcxpresso_1769\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\freertos_blinky\example\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\freertos_blinky\freertos\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"freertos/src/list.d" -MT"freertos/src/list.o" -MT"freertos/src/list.d" -o "freertos/src/list.o" "../freertos/src/list.c"
+Finished building: ../freertos/src/list.c
+ 
+Building file: ../freertos/src/port.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_board_nxp_lpcxpresso_1769\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\freertos_blinky\example\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\freertos_blinky\freertos\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"freertos/src/port.d" -MT"freertos/src/port.o" -MT"freertos/src/port.d" -o "freertos/src/port.o" "../freertos/src/port.c"
+Finished building: ../freertos/src/port.c
+ 
+Building file: ../freertos/src/queue.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_board_nxp_lpcxpresso_1769\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\freertos_blinky\example\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\freertos_blinky\freertos\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"freertos/src/queue.d" -MT"freertos/src/queue.o" -MT"freertos/src/queue.d" -o "freertos/src/queue.o" "../freertos/src/queue.c"
+Finished building: ../freertos/src/queue.c
+ 
+Building file: ../freertos/src/tasks.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_board_nxp_lpcxpresso_1769\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\freertos_blinky\example\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\freertos_blinky\freertos\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"freertos/src/tasks.d" -MT"freertos/src/tasks.o" -MT"freertos/src/tasks.d" -o "freertos/src/tasks.o" "../freertos/src/tasks.c"
+Finished building: ../freertos/src/tasks.c
+ 
+Building file: ../example/src/cr_startup_lpc175x_6x.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_board_nxp_lpcxpresso_1769\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\freertos_blinky\example\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\freertos_blinky\freertos\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/cr_startup_lpc175x_6x.d" -MT"example/src/cr_startup_lpc175x_6x.o" -MT"example/src/cr_startup_lpc175x_6x.d" -o "example/src/cr_startup_lpc175x_6x.o" "../example/src/cr_startup_lpc175x_6x.c"
+Finished building: ../example/src/cr_startup_lpc175x_6x.c
+ 
+Building file: ../example/src/freertos_blinky.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_board_nxp_lpcxpresso_1769\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\freertos_blinky\example\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\freertos_blinky\freertos\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/freertos_blinky.d" -MT"example/src/freertos_blinky.o" -MT"example/src/freertos_blinky.d" -o "example/src/freertos_blinky.o" "../example/src/freertos_blinky.c"
+../example/src/freertos_blinky.c:65:6: error: 'EINT3_IRQn' redeclared as different kind of symbol
+ void EINT3_IRQn(void){
+      ^
+In file included from C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc/cmsis.h:44:0,
+                 from C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc/chip.h:37,
+                 from C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_board_nxp_lpcxpresso_1769\inc/board.h:35,
+                 from ../example/src/freertos_blinky.c:32:
+C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc/cmsis_175x_6x.h:115:2: note: previous definition of 'EINT3_IRQn' was here
+  EINT3_IRQn                    = 21,   /*!< External Interrupt 3 Interrupt                   */
+  ^
+../example/src/freertos_blinky.c: In function 'EINT3_IRQn':
+../example/src/freertos_blinky.c:66:43: error: 'GPIO_INTERRUPT_PORT' undeclared (first use in this function)
+  Chip_GPIOINT_ClearIntStatus(LPC_GPIOINT, GPIO_INTERRUPT_PORT, 1 << GPIO_INTERRUPT_PIN);
+                                           ^
+../example/src/freertos_blinky.c:66:43: note: each undeclared identifier is reported only once for each function it appears in
+../example/src/freertos_blinky.c:66:69: error: 'GPIO_INTERRUPT_PIN' undeclared (first use in this function)
+  Chip_GPIOINT_ClearIntStatus(LPC_GPIOINT, GPIO_INTERRUPT_PORT, 1 << GPIO_INTERRUPT_PIN);
+                                                                     ^
+../example/src/freertos_blinky.c: In function 'vLEDTask1':
+../example/src/freertos_blinky.c:76:7: warning: unused variable 'LedState' [-Wunused-variable]
+  bool LedState = false;
+       ^
+make: *** [example/src/freertos_blinky.o] Error 1
+11:27:21 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+11:27:21 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+11:27:22 **** Incremental Build of configuration Debug for project freertos_blinky ****
+make -r all 
+Building file: ../example/src/freertos_blinky.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_board_nxp_lpcxpresso_1769\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\freertos_blinky\example\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\freertos_blinky\freertos\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/freertos_blinky.d" -MT"example/src/freertos_blinky.o" -MT"example/src/freertos_blinky.d" -o "example/src/freertos_blinky.o" "../example/src/freertos_blinky.c"
+../example/src/freertos_blinky.c: In function 'EINT3_IRQHandler':
+../example/src/freertos_blinky.c:67:43: error: 'GPIO_INTERRUPT_PORT' undeclared (first use in this function)
+  Chip_GPIOINT_ClearIntStatus(LPC_GPIOINT, GPIO_INTERRUPT_PORT, 1 << GPIO_INTERRUPT_PIN);
+                                           ^
+../example/src/freertos_blinky.c:67:43: note: each undeclared identifier is reported only once for each function it appears in
+../example/src/freertos_blinky.c:67:69: error: 'GPIO_INTERRUPT_PIN' undeclared (first use in this function)
+  Chip_GPIOINT_ClearIntStatus(LPC_GPIOINT, GPIO_INTERRUPT_PORT, 1 << GPIO_INTERRUPT_PIN);
+                                                                     ^
+../example/src/freertos_blinky.c: In function 'vLEDTask1':
+../example/src/freertos_blinky.c:77:7: warning: unused variable 'LedState' [-Wunused-variable]
+  bool LedState = false;
+       ^
+make: *** [example/src/freertos_blinky.o] Error 1
+11:27:33 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+11:27:33 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+11:27:35 **** Incremental Build of configuration Debug for project freertos_blinky ****
+make -r all 
+Building file: ../example/src/freertos_blinky.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_board_nxp_lpcxpresso_1769\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\freertos_blinky\example\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\freertos_blinky\freertos\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/freertos_blinky.d" -MT"example/src/freertos_blinky.o" -MT"example/src/freertos_blinky.d" -o "example/src/freertos_blinky.o" "../example/src/freertos_blinky.c"
+../example/src/freertos_blinky.c: In function 'vLEDTask1':
+../example/src/freertos_blinky.c:77:7: warning: unused variable 'LedState' [-Wunused-variable]
+  bool LedState = false;
+       ^
+Finished building: ../example/src/freertos_blinky.c
+ 
+Building file: ../example/src/lcd.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_board_nxp_lpcxpresso_1769\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\freertos_blinky\example\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\freertos_blinky\freertos\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/lcd.d" -MT"example/src/lcd.o" -MT"example/src/lcd.d" -o "example/src/lcd.o" "../example/src/lcd.c"
+Finished building: ../example/src/lcd.c
+ 
+Building file: ../example/src/sysinit.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_board_nxp_lpcxpresso_1769\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\freertos_blinky\example\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\freertos_blinky\freertos\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/sysinit.d" -MT"example/src/sysinit.o" -MT"example/src/sysinit.d" -o "example/src/sysinit.o" "../example/src/sysinit.c"
+Finished building: ../example/src/sysinit.c
+ 
+Building target: freertos_blinky.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\Debug" -L"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_board_nxp_lpcxpresso_1769\Debug" -Xlinker -Map="freertos_blinky.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "freertos_blinky_Debug.ld" -o "freertos_blinky.axf"  ./freertos/src/FreeRTOSCommonHooks.o ./freertos/src/heap_3.o ./freertos/src/list.o ./freertos/src/port.o ./freertos/src/queue.o ./freertos/src/tasks.o  ./example/src/cr_startup_lpc175x_6x.o ./example/src/freertos_blinky.o ./example/src/lcd.o ./example/src/sysinit.o   -llpc_board_nxp_lpcxpresso_1769 -llpc_chip_175x_6x
+Finished building target: freertos_blinky.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "freertos_blinky.axf"; # arm-none-eabi-objcopy -v -O binary "freertos_blinky.axf" "freertos_blinky.bin" ; # checksum -p LPC1769 -d "freertos_blinky.bin";
+   text	   data	    bss	    dec	    hex	filename
+  10900	      8	    672	  11580	   2d3c	freertos_blinky.axf
+ 
+11:28:08 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+11:28:08 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+11:28:10 **** Incremental Build of configuration Debug for project freertos_blinky ****
+make -r all 
+Building file: ../example/src/freertos_blinky.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_board_nxp_lpcxpresso_1769\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\freertos_blinky\example\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\freertos_blinky\freertos\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/freertos_blinky.d" -MT"example/src/freertos_blinky.o" -MT"example/src/freertos_blinky.d" -o "example/src/freertos_blinky.o" "../example/src/freertos_blinky.c"
+Finished building: ../example/src/freertos_blinky.c
+ 
+Building target: freertos_blinky.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\Debug" -L"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_board_nxp_lpcxpresso_1769\Debug" -Xlinker -Map="freertos_blinky.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "freertos_blinky_Debug.ld" -o "freertos_blinky.axf"  ./freertos/src/FreeRTOSCommonHooks.o ./freertos/src/heap_3.o ./freertos/src/list.o ./freertos/src/port.o ./freertos/src/queue.o ./freertos/src/tasks.o  ./example/src/cr_startup_lpc175x_6x.o ./example/src/freertos_blinky.o ./example/src/lcd.o ./example/src/sysinit.o   -llpc_board_nxp_lpcxpresso_1769 -llpc_chip_175x_6x
+Finished building target: freertos_blinky.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "freertos_blinky.axf"; # arm-none-eabi-objcopy -v -O binary "freertos_blinky.axf" "freertos_blinky.bin" ; # checksum -p LPC1769 -d "freertos_blinky.bin";
+   text	   data	    bss	    dec	    hex	filename
+  10896	      8	    672	  11576	   2d38	freertos_blinky.axf
+ 
+11:28:12 **** Incremental Build of configuration Debug for project freertos_blinky ****
+make -r all 
+make: Nothing to be done for `all'.
+11:37:50 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+11:37:50 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+11:37:51 **** Incremental Build of configuration Debug for project freertos_blinky ****
+make -r all 
+Building file: ../example/src/freertos_blinky.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_board_nxp_lpcxpresso_1769\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\freertos_blinky\example\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\freertos_blinky\freertos\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/freertos_blinky.d" -MT"example/src/freertos_blinky.o" -MT"example/src/freertos_blinky.d" -o "example/src/freertos_blinky.o" "../example/src/freertos_blinky.c"
+Finished building: ../example/src/freertos_blinky.c
+ 
+Building target: freertos_blinky.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\Debug" -L"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_board_nxp_lpcxpresso_1769\Debug" -Xlinker -Map="freertos_blinky.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "freertos_blinky_Debug.ld" -o "freertos_blinky.axf"  ./freertos/src/FreeRTOSCommonHooks.o ./freertos/src/heap_3.o ./freertos/src/list.o ./freertos/src/port.o ./freertos/src/queue.o ./freertos/src/tasks.o  ./example/src/cr_startup_lpc175x_6x.o ./example/src/freertos_blinky.o ./example/src/lcd.o ./example/src/sysinit.o   -llpc_board_nxp_lpcxpresso_1769 -llpc_chip_175x_6x
+Finished building target: freertos_blinky.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "freertos_blinky.axf"; # arm-none-eabi-objcopy -v -O binary "freertos_blinky.axf" "freertos_blinky.bin" ; # checksum -p LPC1769 -d "freertos_blinky.bin";
+   text	   data	    bss	    dec	    hex	filename
+  10900	      8	    672	  11580	   2d3c	freertos_blinky.axf
+ 
+11:38:42 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+11:38:42 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+11:38:44 **** Incremental Build of configuration Debug for project freertos_blinky ****
+make -r all 
+make: Nothing to be done for `all'.
+11:38:45 **** Incremental Build of configuration Debug for project freertos_blinky ****
+make -r all 
+make: Nothing to be done for `all'.
+11:39:02 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+11:39:03 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+11:39:04 **** Incremental Build of configuration Debug for project freertos_blinky ****
+make -r all 
+make: Nothing to be done for `all'.
+11:39:06 **** Incremental Build of configuration Debug for project freertos_blinky ****
+make -r all 
+make: Nothing to be done for `all'.
+11:45:12 **** Incremental Build of configuration Debug for project freertos_blinky ****
+make -r all 
+Building file: ../example/src/freertos_blinky.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_board_nxp_lpcxpresso_1769\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\freertos_blinky\example\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\freertos_blinky\freertos\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/freertos_blinky.d" -MT"example/src/freertos_blinky.o" -MT"example/src/freertos_blinky.d" -o "example/src/freertos_blinky.o" "../example/src/freertos_blinky.c"
+Finished building: ../example/src/freertos_blinky.c
+ 
+Building target: freertos_blinky.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\Debug" -L"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_board_nxp_lpcxpresso_1769\Debug" -Xlinker -Map="freertos_blinky.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "freertos_blinky_Debug.ld" -o "freertos_blinky.axf"  ./freertos/src/FreeRTOSCommonHooks.o ./freertos/src/heap_3.o ./freertos/src/list.o ./freertos/src/port.o ./freertos/src/queue.o ./freertos/src/tasks.o  ./example/src/cr_startup_lpc175x_6x.o ./example/src/freertos_blinky.o ./example/src/lcd.o ./example/src/sysinit.o   -llpc_board_nxp_lpcxpresso_1769 -llpc_chip_175x_6x
+Finished building target: freertos_blinky.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "freertos_blinky.axf"; # arm-none-eabi-objcopy -v -O binary "freertos_blinky.axf" "freertos_blinky.bin" ; # checksum -p LPC1769 -d "freertos_blinky.bin";
+   text	   data	    bss	    dec	    hex	filename
+  10512	      8	    668	  11188	   2bb4	freertos_blinky.axf
+ 
+11:45:47 **** Incremental Build of configuration Debug for project freertos_blinky ****
+make -r all 
+Building file: ../example/src/freertos_blinky.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_board_nxp_lpcxpresso_1769\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\freertos_blinky\example\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\freertos_blinky\freertos\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/freertos_blinky.d" -MT"example/src/freertos_blinky.o" -MT"example/src/freertos_blinky.d" -o "example/src/freertos_blinky.o" "../example/src/freertos_blinky.c"
+Finished building: ../example/src/freertos_blinky.c
+ 
+Building target: freertos_blinky.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\Debug" -L"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_board_nxp_lpcxpresso_1769\Debug" -Xlinker -Map="freertos_blinky.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "freertos_blinky_Debug.ld" -o "freertos_blinky.axf"  ./freertos/src/FreeRTOSCommonHooks.o ./freertos/src/heap_3.o ./freertos/src/list.o ./freertos/src/port.o ./freertos/src/queue.o ./freertos/src/tasks.o  ./example/src/cr_startup_lpc175x_6x.o ./example/src/freertos_blinky.o ./example/src/lcd.o ./example/src/sysinit.o   -llpc_board_nxp_lpcxpresso_1769 -llpc_chip_175x_6x
+Finished building target: freertos_blinky.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "freertos_blinky.axf"; # arm-none-eabi-objcopy -v -O binary "freertos_blinky.axf" "freertos_blinky.bin" ; # checksum -p LPC1769 -d "freertos_blinky.bin";
+   text	   data	    bss	    dec	    hex	filename
+  10520	      8	    668	  11196	   2bbc	freertos_blinky.axf
+ 
+11:58:56 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+11:58:56 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+11:58:58 **** Incremental Build of configuration Debug for project freertos_blinky ****
+make -r all 
+Building file: ../example/src/freertos_blinky.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_board_nxp_lpcxpresso_1769\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\freertos_blinky\example\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\freertos_blinky\freertos\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/freertos_blinky.d" -MT"example/src/freertos_blinky.o" -MT"example/src/freertos_blinky.d" -o "example/src/freertos_blinky.o" "../example/src/freertos_blinky.c"
+Finished building: ../example/src/freertos_blinky.c
+ 
+Building target: freertos_blinky.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\Debug" -L"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_board_nxp_lpcxpresso_1769\Debug" -Xlinker -Map="freertos_blinky.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "freertos_blinky_Debug.ld" -o "freertos_blinky.axf"  ./freertos/src/FreeRTOSCommonHooks.o ./freertos/src/heap_3.o ./freertos/src/list.o ./freertos/src/port.o ./freertos/src/queue.o ./freertos/src/tasks.o  ./example/src/cr_startup_lpc175x_6x.o ./example/src/freertos_blinky.o ./example/src/lcd.o ./example/src/sysinit.o   -llpc_board_nxp_lpcxpresso_1769 -llpc_chip_175x_6x
+Finished building target: freertos_blinky.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "freertos_blinky.axf"; # arm-none-eabi-objcopy -v -O binary "freertos_blinky.axf" "freertos_blinky.bin" ; # checksum -p LPC1769 -d "freertos_blinky.bin";
+   text	   data	    bss	    dec	    hex	filename
+  10908	      8	    672	  11588	   2d44	freertos_blinky.axf
+ 
+11:59:39 **** Incremental Build of configuration Debug for project freertos_blinky ****
+make -r all 
+make: Nothing to be done for `all'.
+12:00:42 **** Incremental Build of configuration Debug for project freertos_blinky ****
+make -r all 
+Building file: ../example/src/freertos_blinky.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_board_nxp_lpcxpresso_1769\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\freertos_blinky\example\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\freertos_blinky\freertos\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/freertos_blinky.d" -MT"example/src/freertos_blinky.o" -MT"example/src/freertos_blinky.d" -o "example/src/freertos_blinky.o" "../example/src/freertos_blinky.c"
+Finished building: ../example/src/freertos_blinky.c
+ 
+Building target: freertos_blinky.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\Debug" -L"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_board_nxp_lpcxpresso_1769\Debug" -Xlinker -Map="freertos_blinky.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "freertos_blinky_Debug.ld" -o "freertos_blinky.axf"  ./freertos/src/FreeRTOSCommonHooks.o ./freertos/src/heap_3.o ./freertos/src/list.o ./freertos/src/port.o ./freertos/src/queue.o ./freertos/src/tasks.o  ./example/src/cr_startup_lpc175x_6x.o ./example/src/freertos_blinky.o ./example/src/lcd.o ./example/src/sysinit.o   -llpc_board_nxp_lpcxpresso_1769 -llpc_chip_175x_6x
+Finished building target: freertos_blinky.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "freertos_blinky.axf"; # arm-none-eabi-objcopy -v -O binary "freertos_blinky.axf" "freertos_blinky.bin" ; # checksum -p LPC1769 -d "freertos_blinky.bin";
+   text	   data	    bss	    dec	    hex	filename
+  10520	      8	    668	  11196	   2bbc	freertos_blinky.axf
+ 
+12:46:31 **** Incremental Build of configuration Debug for project freertos_blinky ****
+make -r all 
+make: Nothing to be done for `all'.
+12:47:07 **** Incremental Build of configuration Debug for project freertos_blinky ****
+make -r all 
+Building file: ../example/src/freertos_blinky.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_board_nxp_lpcxpresso_1769\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\freertos_blinky\example\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\freertos_blinky\freertos\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/freertos_blinky.d" -MT"example/src/freertos_blinky.o" -MT"example/src/freertos_blinky.d" -o "example/src/freertos_blinky.o" "../example/src/freertos_blinky.c"
+Finished building: ../example/src/freertos_blinky.c
+ 
+Building target: freertos_blinky.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\Debug" -L"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_board_nxp_lpcxpresso_1769\Debug" -Xlinker -Map="freertos_blinky.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "freertos_blinky_Debug.ld" -o "freertos_blinky.axf"  ./freertos/src/FreeRTOSCommonHooks.o ./freertos/src/heap_3.o ./freertos/src/list.o ./freertos/src/port.o ./freertos/src/queue.o ./freertos/src/tasks.o  ./example/src/cr_startup_lpc175x_6x.o ./example/src/freertos_blinky.o ./example/src/lcd.o ./example/src/sysinit.o   -llpc_board_nxp_lpcxpresso_1769 -llpc_chip_175x_6x
+Finished building target: freertos_blinky.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "freertos_blinky.axf"; # arm-none-eabi-objcopy -v -O binary "freertos_blinky.axf" "freertos_blinky.bin" ; # checksum -p LPC1769 -d "freertos_blinky.bin";
+   text	   data	    bss	    dec	    hex	filename
+  10908	      8	    672	  11588	   2d44	freertos_blinky.axf
+ 
+12:47:43 **** Incremental Build of configuration Debug for project freertos_blinky ****
+make -r all 
+Building file: ../example/src/freertos_blinky.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_board_nxp_lpcxpresso_1769\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\freertos_blinky\example\inc" -I"C:\Users\Eugenia\Desktop\test_lcd_bis\freertos_blinky\freertos\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/freertos_blinky.d" -MT"example/src/freertos_blinky.o" -MT"example/src/freertos_blinky.d" -o "example/src/freertos_blinky.o" "../example/src/freertos_blinky.c"
+Finished building: ../example/src/freertos_blinky.c
+ 
+Building target: freertos_blinky.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_chip_175x_6x\Debug" -L"C:\Users\Eugenia\Desktop\test_lcd_bis\lpc_board_nxp_lpcxpresso_1769\Debug" -Xlinker -Map="freertos_blinky.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "freertos_blinky_Debug.ld" -o "freertos_blinky.axf"  ./freertos/src/FreeRTOSCommonHooks.o ./freertos/src/heap_3.o ./freertos/src/list.o ./freertos/src/port.o ./freertos/src/queue.o ./freertos/src/tasks.o  ./example/src/cr_startup_lpc175x_6x.o ./example/src/freertos_blinky.o ./example/src/lcd.o ./example/src/sysinit.o   -llpc_board_nxp_lpcxpresso_1769 -llpc_chip_175x_6x
+Finished building target: freertos_blinky.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "freertos_blinky.axf"; # arm-none-eabi-objcopy -v -O binary "freertos_blinky.axf" "freertos_blinky.bin" ; # checksum -p LPC1769 -d "freertos_blinky.bin";
+   text	   data	    bss	    dec	    hex	filename
+  10904	      8	    672	  11584	   2d40	freertos_blinky.axf
+ 

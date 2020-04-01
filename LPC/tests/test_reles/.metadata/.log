@@ -1,0 +1,24 @@
+!SESSION 2016-02-18 14:15:30.077 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui 4 4 2016-02-18 14:15:40.273
+!MESSAGE Plugin org.eclipse.cdt.ui, extension org.eclipse.ui.decorators, id org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator: Duplicate id found: org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator
+
+!ENTRY org.eclipse.ui 4 4 2016-02-18 14:15:40.279
+!MESSAGE Plugin org.eclipse.cdt.ui, extension org.eclipse.ui.decorators, id org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator: Unknown extension tag found: decorator
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-02-18 14:16:16.102
+!MESSAGE Indexed 'lpc_board_nxp_lpcxpresso_1769' (3 sources, 71 headers) in 1,06 sec: 4.253 declarations; 7.328 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-02-18 14:16:17.102
+!MESSAGE Indexed 'lpc_chip_175x_6x' (32 sources, 85 headers) in 0,978 sec: 5.541 declarations; 13.598 references; 4 unresolved inclusions; 4 syntax errors; 16 unresolved names (0,084 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-02-18 14:16:17.459
+!MESSAGE Indexed 'periph_pinint' (3 sources, 46 headers) in 0,341 sec: 3.482 declarations; 4.987 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+
+!ENTRY com.crt.log 1 0 2016-02-18 14:24:08.562
+!MESSAGE Drivers loaded in 1444 milliseconds

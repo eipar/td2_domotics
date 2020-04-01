@@ -1,0 +1,24 @@
+!SESSION 2016-02-18 08:00:36.883 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui 4 4 2016-02-18 08:00:43.864
+!MESSAGE Plugin org.eclipse.cdt.ui, extension org.eclipse.ui.decorators, id org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator: Duplicate id found: org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator
+
+!ENTRY org.eclipse.ui 4 4 2016-02-18 08:00:43.870
+!MESSAGE Plugin org.eclipse.cdt.ui, extension org.eclipse.ui.decorators, id org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator: Unknown extension tag found: decorator
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-02-18 08:02:18.270
+!MESSAGE Indexed 'freertos_blinky' (9 sources, 63 headers) in 1,11 sec: 4.523 declarations; 8.916 references; 0 unresolved inclusions; 6 syntax errors; 0 unresolved names (0 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-02-18 08:02:19.019
+!MESSAGE Indexed 'lpc_board_nxp_lpcxpresso_1769' (3 sources, 71 headers) in 0,745 sec: 4.253 declarations; 7.328 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-02-18 08:02:20.068
+!MESSAGE Indexed 'lpc_chip_175x_6x' (32 sources, 85 headers) in 1,03 sec: 5.541 declarations; 13.598 references; 4 unresolved inclusions; 4 syntax errors; 16 unresolved names (0,084 %)
+
+!ENTRY com.crt.log 1 0 2016-02-18 08:17:43.553
+!MESSAGE Drivers loaded in 1178 milliseconds

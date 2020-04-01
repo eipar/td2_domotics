@@ -1,0 +1,472 @@
+09:25:56 **** Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+Building file: ../src/board.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\inc" -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_board_nxp_lpcxpresso_1769\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/board.d" -MT"src/board.o" -MT"src/board.d" -o "src/board.o" "../src/board.c"
+../src/board.c: In function 'Board_I2C_Init':
+../src/board.c:267:2: warning: enumeration value 'I2C_NUM_INTERFACE' not handled in switch [-Wswitch]
+  switch (id) {
+  ^
+Finished building: ../src/board.c
+ 
+Building file: ../src/board_sysinit.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\inc" -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_board_nxp_lpcxpresso_1769\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/board_sysinit.d" -MT"src/board_sysinit.o" -MT"src/board_sysinit.d" -o "src/board_sysinit.o" "../src/board_sysinit.c"
+Finished building: ../src/board_sysinit.c
+ 
+Building file: ../src/lpc_phy_smsc87x0.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\inc" -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_board_nxp_lpcxpresso_1769\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/lpc_phy_smsc87x0.d" -MT"src/lpc_phy_smsc87x0.o" -MT"src/lpc_phy_smsc87x0.d" -o "src/lpc_phy_smsc87x0.o" "../src/lpc_phy_smsc87x0.c"
+Finished building: ../src/lpc_phy_smsc87x0.c
+ 
+Building target: liblpc_board_nxp_lpcxpresso_1769.a
+Invoking: MCU Archiver
+arm-none-eabi-ar -r  "liblpc_board_nxp_lpcxpresso_1769.a"  ./src/board.o ./src/board_sysinit.o ./src/lpc_phy_smsc87x0.o   
+c:\nxp\LPCXpresso_8.0.0_526\lpcxpresso\tools\bin\arm-none-eabi-ar.exe: creating liblpc_board_nxp_lpcxpresso_1769.a
+Finished building target: liblpc_board_nxp_lpcxpresso_1769.a
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "liblpc_board_nxp_lpcxpresso_1769.a" ; # arm-none-eabi-objdump -h -S "liblpc_board_nxp_lpcxpresso_1769.a" >"liblpc_board_nxp_lpcxpresso_1769.lss"
+   text	   data	    bss	    dec	    hex	filename
+   2197	      0	      0	   2197	    895	board.o (ex liblpc_board_nxp_lpcxpresso_1769.a)
+    196	      0	      0	    196	     c4	board_sysinit.o (ex liblpc_board_nxp_lpcxpresso_1769.a)
+    860	      0	     18	    878	    36e	lpc_phy_smsc87x0.o (ex liblpc_board_nxp_lpcxpresso_1769.a)
+ 
+09:25:58 **** Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+Building file: ../src/adc_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/adc_17xx_40xx.d" -MT"src/adc_17xx_40xx.o" -MT"src/adc_17xx_40xx.d" -o "src/adc_17xx_40xx.o" "../src/adc_17xx_40xx.c"
+Finished building: ../src/adc_17xx_40xx.c
+ 
+Building file: ../src/can_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/can_17xx_40xx.d" -MT"src/can_17xx_40xx.o" -MT"src/can_17xx_40xx.d" -o "src/can_17xx_40xx.o" "../src/can_17xx_40xx.c"
+../src/can_17xx_40xx.c: In function 'Chip_CAN_Init':
+../src/can_17xx_40xx.c:751:20: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  volatile uint32_t i;
+                    ^
+Finished building: ../src/can_17xx_40xx.c
+ 
+Building file: ../src/chip_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/chip_17xx_40xx.d" -MT"src/chip_17xx_40xx.o" -MT"src/chip_17xx_40xx.d" -o "src/chip_17xx_40xx.o" "../src/chip_17xx_40xx.c"
+Finished building: ../src/chip_17xx_40xx.c
+ 
+Building file: ../src/clock_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/clock_17xx_40xx.d" -MT"src/clock_17xx_40xx.o" -MT"src/clock_17xx_40xx.d" -o "src/clock_17xx_40xx.o" "../src/clock_17xx_40xx.c"
+../src/clock_17xx_40xx.c: In function 'Chip_Clock_GetSYSCLKRate':
+../src/clock_17xx_40xx.c:320:2: warning: enumeration value 'SYSCTL_PLLCLKSRC_RESERVED2' not handled in switch [-Wswitch]
+  switch (Chip_Clock_GetMainPLLSource()) {
+  ^
+Finished building: ../src/clock_17xx_40xx.c
+ 
+Building file: ../src/cmp_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/cmp_17xx_40xx.d" -MT"src/cmp_17xx_40xx.o" -MT"src/cmp_17xx_40xx.d" -o "src/cmp_17xx_40xx.o" "../src/cmp_17xx_40xx.c"
+Finished building: ../src/cmp_17xx_40xx.c
+ 
+Building file: ../src/crc_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/crc_17xx_40xx.d" -MT"src/crc_17xx_40xx.o" -MT"src/crc_17xx_40xx.d" -o "src/crc_17xx_40xx.o" "../src/crc_17xx_40xx.c"
+Finished building: ../src/crc_17xx_40xx.c
+ 
+Building file: ../src/dac_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/dac_17xx_40xx.d" -MT"src/dac_17xx_40xx.o" -MT"src/dac_17xx_40xx.d" -o "src/dac_17xx_40xx.o" "../src/dac_17xx_40xx.c"
+Finished building: ../src/dac_17xx_40xx.c
+ 
+Building file: ../src/eeprom_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/eeprom_17xx_40xx.d" -MT"src/eeprom_17xx_40xx.o" -MT"src/eeprom_17xx_40xx.d" -o "src/eeprom_17xx_40xx.o" "../src/eeprom_17xx_40xx.c"
+Finished building: ../src/eeprom_17xx_40xx.c
+ 
+Building file: ../src/emc_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/emc_17xx_40xx.d" -MT"src/emc_17xx_40xx.o" -MT"src/emc_17xx_40xx.d" -o "src/emc_17xx_40xx.o" "../src/emc_17xx_40xx.c"
+Finished building: ../src/emc_17xx_40xx.c
+ 
+Building file: ../src/enet_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/enet_17xx_40xx.d" -MT"src/enet_17xx_40xx.o" -MT"src/enet_17xx_40xx.d" -o "src/enet_17xx_40xx.o" "../src/enet_17xx_40xx.c"
+Finished building: ../src/enet_17xx_40xx.c
+ 
+Building file: ../src/gpdma_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/gpdma_17xx_40xx.d" -MT"src/gpdma_17xx_40xx.o" -MT"src/gpdma_17xx_40xx.d" -o "src/gpdma_17xx_40xx.o" "../src/gpdma_17xx_40xx.c"
+Finished building: ../src/gpdma_17xx_40xx.c
+ 
+Building file: ../src/gpio_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/gpio_17xx_40xx.d" -MT"src/gpio_17xx_40xx.o" -MT"src/gpio_17xx_40xx.d" -o "src/gpio_17xx_40xx.o" "../src/gpio_17xx_40xx.c"
+Finished building: ../src/gpio_17xx_40xx.c
+ 
+Building file: ../src/gpioint_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/gpioint_17xx_40xx.d" -MT"src/gpioint_17xx_40xx.o" -MT"src/gpioint_17xx_40xx.d" -o "src/gpioint_17xx_40xx.o" "../src/gpioint_17xx_40xx.c"
+Finished building: ../src/gpioint_17xx_40xx.c
+ 
+Building file: ../src/i2c_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/i2c_17xx_40xx.d" -MT"src/i2c_17xx_40xx.o" -MT"src/i2c_17xx_40xx.d" -o "src/i2c_17xx_40xx.o" "../src/i2c_17xx_40xx.c"
+Finished building: ../src/i2c_17xx_40xx.c
+ 
+Building file: ../src/i2s_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/i2s_17xx_40xx.d" -MT"src/i2s_17xx_40xx.o" -MT"src/i2s_17xx_40xx.d" -o "src/i2s_17xx_40xx.o" "../src/i2s_17xx_40xx.c"
+Finished building: ../src/i2s_17xx_40xx.c
+ 
+Building file: ../src/iap.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/iap.d" -MT"src/iap.o" -MT"src/iap.d" -o "src/iap.o" "../src/iap.c"
+Finished building: ../src/iap.c
+ 
+Building file: ../src/iocon_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/iocon_17xx_40xx.d" -MT"src/iocon_17xx_40xx.o" -MT"src/iocon_17xx_40xx.d" -o "src/iocon_17xx_40xx.o" "../src/iocon_17xx_40xx.c"
+Finished building: ../src/iocon_17xx_40xx.c
+ 
+Building file: ../src/lcd_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/lcd_17xx_40xx.d" -MT"src/lcd_17xx_40xx.o" -MT"src/lcd_17xx_40xx.d" -o "src/lcd_17xx_40xx.o" "../src/lcd_17xx_40xx.c"
+Finished building: ../src/lcd_17xx_40xx.c
+ 
+Building file: ../src/pmu_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/pmu_17xx_40xx.d" -MT"src/pmu_17xx_40xx.o" -MT"src/pmu_17xx_40xx.d" -o "src/pmu_17xx_40xx.o" "../src/pmu_17xx_40xx.c"
+Finished building: ../src/pmu_17xx_40xx.c
+ 
+Building file: ../src/ring_buffer.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/ring_buffer.d" -MT"src/ring_buffer.o" -MT"src/ring_buffer.d" -o "src/ring_buffer.o" "../src/ring_buffer.c"
+Finished building: ../src/ring_buffer.c
+ 
+Building file: ../src/ritimer_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/ritimer_17xx_40xx.d" -MT"src/ritimer_17xx_40xx.o" -MT"src/ritimer_17xx_40xx.d" -o "src/ritimer_17xx_40xx.o" "../src/ritimer_17xx_40xx.c"
+Finished building: ../src/ritimer_17xx_40xx.c
+ 
+Building file: ../src/rtc_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/rtc_17xx_40xx.d" -MT"src/rtc_17xx_40xx.o" -MT"src/rtc_17xx_40xx.d" -o "src/rtc_17xx_40xx.o" "../src/rtc_17xx_40xx.c"
+Finished building: ../src/rtc_17xx_40xx.c
+ 
+Building file: ../src/sdc_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/sdc_17xx_40xx.d" -MT"src/sdc_17xx_40xx.o" -MT"src/sdc_17xx_40xx.d" -o "src/sdc_17xx_40xx.o" "../src/sdc_17xx_40xx.c"
+Finished building: ../src/sdc_17xx_40xx.c
+ 
+Building file: ../src/sdmmc_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/sdmmc_17xx_40xx.d" -MT"src/sdmmc_17xx_40xx.o" -MT"src/sdmmc_17xx_40xx.d" -o "src/sdmmc_17xx_40xx.o" "../src/sdmmc_17xx_40xx.c"
+Finished building: ../src/sdmmc_17xx_40xx.c
+ 
+Building file: ../src/spi_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/spi_17xx_40xx.d" -MT"src/spi_17xx_40xx.o" -MT"src/spi_17xx_40xx.d" -o "src/spi_17xx_40xx.o" "../src/spi_17xx_40xx.c"
+../src/spi_17xx_40xx.c: In function 'Chip_SPI_Int_FlushData':
+../src/spi_17xx_40xx.c:138:20: warning: variable 'tmp' set but not used [-Wunused-but-set-variable]
+  volatile uint32_t tmp;
+                    ^
+Finished building: ../src/spi_17xx_40xx.c
+ 
+Building file: ../src/ssp_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/ssp_17xx_40xx.d" -MT"src/ssp_17xx_40xx.o" -MT"src/ssp_17xx_40xx.d" -o "src/ssp_17xx_40xx.o" "../src/ssp_17xx_40xx.c"
+Finished building: ../src/ssp_17xx_40xx.c
+ 
+Building file: ../src/stopwatch_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/stopwatch_17xx_40xx.d" -MT"src/stopwatch_17xx_40xx.o" -MT"src/stopwatch_17xx_40xx.d" -o "src/stopwatch_17xx_40xx.o" "../src/stopwatch_17xx_40xx.c"
+Finished building: ../src/stopwatch_17xx_40xx.c
+ 
+Building file: ../src/sysctl_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/sysctl_17xx_40xx.d" -MT"src/sysctl_17xx_40xx.o" -MT"src/sysctl_17xx_40xx.d" -o "src/sysctl_17xx_40xx.o" "../src/sysctl_17xx_40xx.c"
+Finished building: ../src/sysctl_17xx_40xx.c
+ 
+Building file: ../src/sysinit_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/sysinit_17xx_40xx.d" -MT"src/sysinit_17xx_40xx.o" -MT"src/sysinit_17xx_40xx.d" -o "src/sysinit_17xx_40xx.o" "../src/sysinit_17xx_40xx.c"
+Finished building: ../src/sysinit_17xx_40xx.c
+ 
+Building file: ../src/timer_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/timer_17xx_40xx.d" -MT"src/timer_17xx_40xx.o" -MT"src/timer_17xx_40xx.d" -o "src/timer_17xx_40xx.o" "../src/timer_17xx_40xx.c"
+Finished building: ../src/timer_17xx_40xx.c
+ 
+Building file: ../src/uart_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/uart_17xx_40xx.d" -MT"src/uart_17xx_40xx.o" -MT"src/uart_17xx_40xx.d" -o "src/uart_17xx_40xx.o" "../src/uart_17xx_40xx.c"
+Finished building: ../src/uart_17xx_40xx.c
+ 
+Building file: ../src/wwdt_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/wwdt_17xx_40xx.d" -MT"src/wwdt_17xx_40xx.o" -MT"src/wwdt_17xx_40xx.d" -o "src/wwdt_17xx_40xx.o" "../src/wwdt_17xx_40xx.c"
+Finished building: ../src/wwdt_17xx_40xx.c
+ 
+Building target: liblpc_chip_175x_6x.a
+Invoking: MCU Archiver
+arm-none-eabi-ar -r  "liblpc_chip_175x_6x.a"  ./src/adc_17xx_40xx.o ./src/can_17xx_40xx.o ./src/chip_17xx_40xx.o ./src/clock_17xx_40xx.o ./src/cmp_17xx_40xx.o ./src/crc_17xx_40xx.o ./src/dac_17xx_40xx.o ./src/eeprom_17xx_40xx.o ./src/emc_17xx_40xx.o ./src/enet_17xx_40xx.o ./src/gpdma_17xx_40xx.o ./src/gpio_17xx_40xx.o ./src/gpioint_17xx_40xx.o ./src/i2c_17xx_40xx.o ./src/i2s_17xx_40xx.o ./src/iap.o ./src/iocon_17xx_40xx.o ./src/lcd_17xx_40xx.o ./src/pmu_17xx_40xx.o ./src/ring_buffer.o ./src/ritimer_17xx_40xx.o ./src/rtc_17xx_40xx.o ./src/sdc_17xx_40xx.o ./src/sdmmc_17xx_40xx.o ./src/spi_17xx_40xx.o ./src/ssp_17xx_40xx.o ./src/stopwatch_17xx_40xx.o ./src/sysctl_17xx_40xx.o ./src/sysinit_17xx_40xx.o ./src/timer_17xx_40xx.o ./src/uart_17xx_40xx.o ./src/wwdt_17xx_40xx.o   
+c:\nxp\LPCXpresso_8.0.0_526\lpcxpresso\tools\bin\arm-none-eabi-ar.exe: creating liblpc_chip_175x_6x.a
+Finished building target: liblpc_chip_175x_6x.a
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "liblpc_chip_175x_6x.a" ; # arm-none-eabi-objdump -h -S "liblpc_chip_175x_6x.a" >"liblpc_chip_175x_6x.lss"
+   text	   data	    bss	    dec	    hex	filename
+    932	      0	      0	    932	    3a4	adc_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+   8692	      0	      0	   8692	   21f4	can_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+    176	      0	      0	    176	     b0	chip_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+   1620	      0	      0	   1620	    654	clock_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+      0	      0	      0	      0	      0	cmp_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+      0	      0	      0	      0	      0	crc_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+    144	      0	      0	    144	     90	dac_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+      0	      0	      0	      0	      0	eeprom_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+      0	      0	      0	      0	      0	emc_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+   1115	      0	      4	   1119	    45f	enet_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+   2272	     96	      8	   2376	    948	gpdma_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+      0	      0	      0	      0	      0	gpio_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+      0	      0	      0	      0	      0	gpioint_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+   3679	     84	    120	   3883	    f2b	i2c_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+   1464	      0	      0	   1464	    5b8	i2s_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+    556	      0	      0	    556	    22c	iap.o (ex liblpc_chip_175x_6x.a)
+    296	      0	      0	    296	    128	iocon_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+      0	      0	      0	      0	      0	lcd_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+    264	      0	      0	    264	    108	pmu_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+    980	      0	      0	    980	    3d4	ring_buffer.o (ex liblpc_chip_175x_6x.a)
+    240	      0	      0	    240	     f0	ritimer_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+    748	      0	      0	    748	    2ec	rtc_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+      0	      0	      0	      0	      0	sdc_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+      0	      0	      0	      0	      0	sdmmc_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+   1044	      0	      0	   1044	    414	spi_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+   2288	      0	      0	   2288	    8f0	ssp_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+    388	      0	     12	    400	    190	stopwatch_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+     48	      0	      0	     48	     30	sysctl_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+    484	      0	      0	    484	    1e4	sysinit_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+    308	      0	      0	    308	    134	timer_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+   2304	      0	      1	   2305	    901	uart_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+     96	      0	      0	     96	     60	wwdt_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+ 
+09:26:07 **** Build of configuration Debug for project periph_pinint ****
+make -r all 
+Building file: ../example/src/cr_startup_lpc175x_6x.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\inc" -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_board_nxp_lpcxpresso_1769\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/cr_startup_lpc175x_6x.d" -MT"example/src/cr_startup_lpc175x_6x.o" -MT"example/src/cr_startup_lpc175x_6x.d" -o "example/src/cr_startup_lpc175x_6x.o" "../example/src/cr_startup_lpc175x_6x.c"
+Finished building: ../example/src/cr_startup_lpc175x_6x.c
+ 
+Building file: ../example/src/pinint.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\inc" -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_board_nxp_lpcxpresso_1769\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/pinint.d" -MT"example/src/pinint.o" -MT"example/src/pinint.d" -o "example/src/pinint.o" "../example/src/pinint.c"
+Finished building: ../example/src/pinint.c
+ 
+Building file: ../example/src/sysinit.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\inc" -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_board_nxp_lpcxpresso_1769\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/sysinit.d" -MT"example/src/sysinit.o" -MT"example/src/sysinit.d" -o "example/src/sysinit.o" "../example/src/sysinit.c"
+Finished building: ../example/src/sysinit.c
+ 
+Building target: periph_pinint.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\Debug" -L"C:\Users\Eugenia\Desktop\test_buzzer\lpc_board_nxp_lpcxpresso_1769\Debug" -Xlinker -Map="periph_pinint.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "periph_pinint_Debug.ld" -o "periph_pinint.axf"  ./example/src/cr_startup_lpc175x_6x.o ./example/src/pinint.o ./example/src/sysinit.o   -llpc_board_nxp_lpcxpresso_1769 -llpc_chip_175x_6x
+Finished building target: periph_pinint.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "periph_pinint.axf"; # arm-none-eabi-objcopy -v -O binary "periph_pinint.axf" "periph_pinint.bin" ; # checksum -p LPC1769 -d "periph_pinint.bin";
+   text	   data	    bss	    dec	    hex	filename
+   6260	      0	    344	   6604	   19cc	periph_pinint.axf
+ 
+09:43:36 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+09:43:36 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+09:43:38 **** Incremental Build of configuration Debug for project periph_pinint ****
+make -r all 
+make: Nothing to be done for `all'.
+09:43:59 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+09:43:59 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+09:44:00 **** Incremental Build of configuration Debug for project periph_pinint ****
+make -r all 
+Building file: ../example/src/pinint.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\inc" -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_board_nxp_lpcxpresso_1769\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/pinint.d" -MT"example/src/pinint.o" -MT"example/src/pinint.d" -o "example/src/pinint.o" "../example/src/pinint.c"
+Finished building: ../example/src/pinint.c
+ 
+Building target: periph_pinint.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\Debug" -L"C:\Users\Eugenia\Desktop\test_buzzer\lpc_board_nxp_lpcxpresso_1769\Debug" -Xlinker -Map="periph_pinint.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "periph_pinint_Debug.ld" -o "periph_pinint.axf"  ./example/src/cr_startup_lpc175x_6x.o ./example/src/pinint.o ./example/src/sysinit.o   -llpc_board_nxp_lpcxpresso_1769 -llpc_chip_175x_6x
+Finished building target: periph_pinint.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "periph_pinint.axf"; # arm-none-eabi-objcopy -v -O binary "periph_pinint.axf" "periph_pinint.bin" ; # checksum -p LPC1769 -d "periph_pinint.bin";
+   text	   data	    bss	    dec	    hex	filename
+   6272	      0	    344	   6616	   19d8	periph_pinint.axf
+ 
+09:48:43 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+09:48:43 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+09:48:44 **** Incremental Build of configuration Debug for project periph_pinint ****
+make -r all 
+make: Nothing to be done for `all'.
+09:48:46 **** Incremental Build of configuration Debug for project periph_pinint ****
+make -r all 
+make: Nothing to be done for `all'.
+09:50:58 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+09:50:58 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+09:51:00 **** Incremental Build of configuration Debug for project periph_pinint ****
+make -r all 
+Building file: ../example/src/pinint.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\inc" -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_board_nxp_lpcxpresso_1769\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/pinint.d" -MT"example/src/pinint.o" -MT"example/src/pinint.d" -o "example/src/pinint.o" "../example/src/pinint.c"
+Finished building: ../example/src/pinint.c
+ 
+Building target: periph_pinint.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\Debug" -L"C:\Users\Eugenia\Desktop\test_buzzer\lpc_board_nxp_lpcxpresso_1769\Debug" -Xlinker -Map="periph_pinint.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "periph_pinint_Debug.ld" -o "periph_pinint.axf"  ./example/src/cr_startup_lpc175x_6x.o ./example/src/pinint.o ./example/src/sysinit.o   -llpc_board_nxp_lpcxpresso_1769 -llpc_chip_175x_6x
+Finished building target: periph_pinint.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "periph_pinint.axf"; # arm-none-eabi-objcopy -v -O binary "periph_pinint.axf" "periph_pinint.bin" ; # checksum -p LPC1769 -d "periph_pinint.bin";
+   text	   data	    bss	    dec	    hex	filename
+   6272	      0	    344	   6616	   19d8	periph_pinint.axf
+ 
+09:51:02 **** Incremental Build of configuration Debug for project periph_pinint ****
+make -r all 
+make: Nothing to be done for `all'.
+09:54:17 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+09:54:18 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+09:54:19 **** Incremental Build of configuration Debug for project periph_pinint ****
+make -r all 
+make: Nothing to be done for `all'.
+09:54:21 **** Incremental Build of configuration Debug for project periph_pinint ****
+make -r all 
+make: Nothing to be done for `all'.
+09:54:55 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+09:54:56 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+09:54:57 **** Incremental Build of configuration Debug for project periph_pinint ****
+make -r all 
+Building file: ../example/src/pinint.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\inc" -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_board_nxp_lpcxpresso_1769\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/pinint.d" -MT"example/src/pinint.o" -MT"example/src/pinint.d" -o "example/src/pinint.o" "../example/src/pinint.c"
+Finished building: ../example/src/pinint.c
+ 
+Building target: periph_pinint.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\Debug" -L"C:\Users\Eugenia\Desktop\test_buzzer\lpc_board_nxp_lpcxpresso_1769\Debug" -Xlinker -Map="periph_pinint.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "periph_pinint_Debug.ld" -o "periph_pinint.axf"  ./example/src/cr_startup_lpc175x_6x.o ./example/src/pinint.o ./example/src/sysinit.o   -llpc_board_nxp_lpcxpresso_1769 -llpc_chip_175x_6x
+Finished building target: periph_pinint.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "periph_pinint.axf"; # arm-none-eabi-objcopy -v -O binary "periph_pinint.axf" "periph_pinint.bin" ; # checksum -p LPC1769 -d "periph_pinint.bin";
+   text	   data	    bss	    dec	    hex	filename
+   6272	      0	    344	   6616	   19d8	periph_pinint.axf
+ 
+09:55:00 **** Incremental Build of configuration Debug for project periph_pinint ****
+make -r all 
+make: Nothing to be done for `all'.
+09:56:58 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+09:56:59 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+09:57:00 **** Incremental Build of configuration Debug for project periph_pinint ****
+make -r all 
+Building file: ../example/src/pinint.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\inc" -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_board_nxp_lpcxpresso_1769\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/pinint.d" -MT"example/src/pinint.o" -MT"example/src/pinint.d" -o "example/src/pinint.o" "../example/src/pinint.c"
+Finished building: ../example/src/pinint.c
+ 
+Building target: periph_pinint.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\Debug" -L"C:\Users\Eugenia\Desktop\test_buzzer\lpc_board_nxp_lpcxpresso_1769\Debug" -Xlinker -Map="periph_pinint.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "periph_pinint_Debug.ld" -o "periph_pinint.axf"  ./example/src/cr_startup_lpc175x_6x.o ./example/src/pinint.o ./example/src/sysinit.o   -llpc_board_nxp_lpcxpresso_1769 -llpc_chip_175x_6x
+Finished building target: periph_pinint.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "periph_pinint.axf"; # arm-none-eabi-objcopy -v -O binary "periph_pinint.axf" "periph_pinint.bin" ; # checksum -p LPC1769 -d "periph_pinint.bin";
+   text	   data	    bss	    dec	    hex	filename
+   6272	      0	    344	   6616	   19d8	periph_pinint.axf
+ 
+09:57:02 **** Incremental Build of configuration Debug for project periph_pinint ****
+make -r all 
+make: Nothing to be done for `all'.
+10:14:51 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+10:14:51 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+10:14:53 **** Incremental Build of configuration Debug for project periph_pinint ****
+make -r all 
+Building file: ../example/src/pinint.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\inc" -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_board_nxp_lpcxpresso_1769\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/pinint.d" -MT"example/src/pinint.o" -MT"example/src/pinint.d" -o "example/src/pinint.o" "../example/src/pinint.c"
+Finished building: ../example/src/pinint.c
+ 
+Building target: periph_pinint.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\Debug" -L"C:\Users\Eugenia\Desktop\test_buzzer\lpc_board_nxp_lpcxpresso_1769\Debug" -Xlinker -Map="periph_pinint.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "periph_pinint_Debug.ld" -o "periph_pinint.axf"  ./example/src/cr_startup_lpc175x_6x.o ./example/src/pinint.o ./example/src/sysinit.o   -llpc_board_nxp_lpcxpresso_1769 -llpc_chip_175x_6x
+Finished building target: periph_pinint.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "periph_pinint.axf"; # arm-none-eabi-objcopy -v -O binary "periph_pinint.axf" "periph_pinint.bin" ; # checksum -p LPC1769 -d "periph_pinint.bin";
+   text	   data	    bss	    dec	    hex	filename
+   6272	      0	    344	   6616	   19d8	periph_pinint.axf
+ 
+10:14:55 **** Incremental Build of configuration Debug for project periph_pinint ****
+make -r all 
+make: Nothing to be done for `all'.
+10:16:02 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+10:16:03 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+10:16:04 **** Incremental Build of configuration Debug for project periph_pinint ****
+make -r all 
+Building file: ../example/src/pinint.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\inc" -I"C:\Users\Eugenia\Desktop\test_buzzer\lpc_board_nxp_lpcxpresso_1769\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/pinint.d" -MT"example/src/pinint.o" -MT"example/src/pinint.d" -o "example/src/pinint.o" "../example/src/pinint.c"
+Finished building: ../example/src/pinint.c
+ 
+Building target: periph_pinint.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Eugenia\Desktop\test_buzzer\lpc_chip_175x_6x\Debug" -L"C:\Users\Eugenia\Desktop\test_buzzer\lpc_board_nxp_lpcxpresso_1769\Debug" -Xlinker -Map="periph_pinint.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "periph_pinint_Debug.ld" -o "periph_pinint.axf"  ./example/src/cr_startup_lpc175x_6x.o ./example/src/pinint.o ./example/src/sysinit.o   -llpc_board_nxp_lpcxpresso_1769 -llpc_chip_175x_6x
+Finished building target: periph_pinint.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "periph_pinint.axf"; # arm-none-eabi-objcopy -v -O binary "periph_pinint.axf" "periph_pinint.bin" ; # checksum -p LPC1769 -d "periph_pinint.bin";
+   text	   data	    bss	    dec	    hex	filename
+   6268	      0	    344	   6612	   19d4	periph_pinint.axf
+ 
+10:16:06 **** Incremental Build of configuration Debug for project periph_pinint ****
+make -r all 
+make: Nothing to be done for `all'.
