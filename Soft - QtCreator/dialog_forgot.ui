@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dialog_forgot</class>
+ <widget class="QDialog" name="dialog_forgot">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>279</width>
+    <height>245</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Reestablecer Contraseña</string>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>261</width>
+     <height>231</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="Forgot_verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="Forgot_User_horizontalLayout">
+      <item>
+       <widget class="QLabel" name="Forgot_User_label">
+        <property name="text">
+         <string>Usuario:                    </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="Forgot_User_lineEdit"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="Forgot_Word_horizontalLayout">
+      <item>
+       <widget class="QLabel" name="Forgot_Word_label">
+        <property name="text">
+         <string>Contraseña Secreta:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="Forgot_Word_lineEdit"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="Forgot_Ingre1_horizontalLayout">
+      <item>
+       <widget class="QLabel" name="Forgot_Ingre1_label">
+        <property name="text">
+         <string>Ingrese Contraseña Nueva:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="Forgot_Ingr1_lineEdit">
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="Forgot_Ingr2_horizontalLayout">
+      <item>
+       <widget class="QLabel" name="Forgot_Ingr2_label">
+        <property name="text">
+         <string>Ingrese Nuevamente:          </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="Forgot_Ingr2_lineEdit">
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QDialogButtonBox" name="Forgot_buttonBox">
+      <property name="standardButtons">
+       <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+      </property>
+      <property name="centerButtons">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

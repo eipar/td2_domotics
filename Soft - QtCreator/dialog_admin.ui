@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog_Admin</class>
+ <widget class="QDialog" name="Dialog_Admin">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>419</width>
+    <height>395</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Administrador</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>false</bool>
+  </property>
+  <property name="modal">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>401</width>
+     <height>371</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="Admin_verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="Admin_tabWidget">
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="tabShape">
+       <enum>QTabWidget::Rounded</enum>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <property name="elideMode">
+       <enum>Qt::ElideNone</enum>
+      </property>
+      <property name="movable">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="Admin_Tab_Pref">
+       <attribute name="title">
+        <string>Prefencias</string>
+       </attribute>
+       <widget class="QWidget" name="verticalLayoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>181</width>
+          <height>261</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="Admin_Pref_verticalLayout_Config">
+         <item>
+          <widget class="QCheckBox" name="Admin_Pref_checkBox_THL">
+           <property name="text">
+            <string>Habilitar Edición</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="Admin_Pref_label_Config">
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+             <underline>true</underline>
+            </font>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="text">
+            <string>Configuración</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="Admin_Pref_label_Temp">
+           <property name="font">
+            <font>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Temperatura:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="Admin_Pref_spinBox_Temp">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="wrapping">
+            <bool>false</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::UpDownArrows</enum>
+           </property>
+           <property name="correctionMode">
+            <enum>QAbstractSpinBox::CorrectToPreviousValue</enum>
+           </property>
+           <property name="minimum">
+            <number>1</number>
+           </property>
+           <property name="maximum">
+            <number>40</number>
+           </property>
+           <property name="displayIntegerBase">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="Admin_Pref_label_Luz">
+           <property name="text">
+            <string>Luz:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="Admin_Pref_spinBox_Luz">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="minimum">
+            <number>4</number>
+           </property>
+           <property name="maximum">
+            <number>6</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="verticalLayoutWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>0</y>
+          <width>205</width>
+          <height>261</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="Admin_Pref_verticalLayout_Change">
+         <item>
+          <widget class="QCheckBox" name="Admin_Pref_checkBox_Pass">
+           <property name="text">
+            <string>Habilitar Edición</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="Admin_Pref_label_Ingr1">
+           <property name="text">
+            <string>Ingrese contraseña nueva:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="Admin_Pref_lineEdit_Ingr1">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="echoMode">
+            <enum>QLineEdit::Password</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="Admin_Pref_label_Ingr2">
+           <property name="text">
+            <string>Ingrese nuevamente la contraseña:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="Admin_Pref_lineEdit_Ingre2">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="echoMode">
+            <enum>QLineEdit::Password</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="Admin_Pref_label_Word">
+           <property name="text">
+            <string>Contraseña Secreta:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="Admin_Pref_lineEdit_Word">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="Admin_tab_Users">
+       <attribute name="title">
+        <string>Usuarios</string>
+       </attribute>
+       <widget class="QWidget" name="horizontalLayoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>391</width>
+          <height>259</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="Admin_Users_horizontalLayout">
+         <item>
+          <layout class="QVBoxLayout" name="Admin_Users_verticalLayout_Listado">
+           <item>
+            <widget class="QLabel" name="Admin_User_label_Listado">
+             <property name="font">
+              <font>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Listado de Usuarios</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QListWidget" name="Admin_User_listWidget"/>
+           </item>
+           <item>
+            <widget class="QPushButton" name="Admin_User_pushButton_Eliminar">
+             <property name="text">
+              <string>Eliminar Usuario</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="Admin_Users_verticalLayout_Muestra">
+           <item>
+            <widget class="QCheckBox" name="Admin_User_checkBox">
+             <property name="text">
+              <string>Habilitar Edición</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="Admin_User_label_Datos">
+             <property name="font">
+              <font>
+               <weight>75</weight>
+               <bold>true</bold>
+               <underline>true</underline>
+              </font>
+             </property>
+             <property name="text">
+              <string>Datos:</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <item>
+              <widget class="QLabel" name="label_ID_User">
+               <property name="text">
+                <string>ID:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_ID_User_Num">
+               <property name="text">
+                <string>TextLabel</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="Admin_User_horizontalLayout_Datos_User">
+             <item>
+              <widget class="QLabel" name="Admin_User_label_User">
+               <property name="text">
+                <string>Usuario:         </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="Admin_User_lineEdit_User">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="Admin_User_horizontalLayout_Datos_Pass">
+             <item>
+              <widget class="QLabel" name="Admin_User_label_Pass">
+               <property name="text">
+                <string>Contraseña:  </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="Admin_User_lineEdit_Pass">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <widget class="QLabel" name="Admin_User_label_Word">
+               <property name="text">
+                <string>Palabra Secreta:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="Admin_User_lineEdit_Word">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="Admin_Users_horizontalLayout_Datos_Temp">
+             <item>
+              <widget class="QLabel" name="Admin_User_label_Temp">
+               <property name="text">
+                <string>Temperatura:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="Admin_User_spinBox_Temp">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="minimum">
+                <number>1</number>
+               </property>
+               <property name="maximum">
+                <number>40</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="Admin_User_horizontalLayout_Datos_Luz">
+             <item>
+              <widget class="QLabel" name="Admin_User_label_Luz">
+               <property name="text">
+                <string>Luz:               </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="Admin_User_spinBox_Luz">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="minimum">
+                <number>4</number>
+               </property>
+               <property name="maximum">
+                <number>6</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="Admin_tab_Config">
+       <attribute name="title">
+        <string>Estado</string>
+       </attribute>
+       <widget class="QWidget" name="verticalLayoutWidget_6">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>10</y>
+          <width>191</width>
+          <height>251</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QLabel" name="Admin_Config_label_Act">
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+             <underline>true</underline>
+            </font>
+           </property>
+           <property name="text">
+            <string>Datos Actuales</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="Admin_Config_label_Act_Temp">
+           <property name="text">
+            <string>Temperatura</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLCDNumber" name="Admin_Config_lcdNumber_Temp">
+           <property name="smallDecimalPoint">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="Admin_Config_label_Act_Luz">
+           <property name="text">
+            <string>Luz</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLCDNumber" name="Admin_Config_lcdNumber_Luz"/>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="verticalLayoutWidget_7">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>10</y>
+          <width>171</width>
+          <height>257</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QLabel" name="Admin_Config_label_Puerto">
+           <property name="text">
+            <string>Conexión al dispositivo</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="Admin_Config_label_PuertosDisp">
+           <property name="text">
+            <string>Puertos Disponibles:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="Admin_Config_comboBox_PuertosDisp"/>
+         </item>
+         <item>
+          <widget class="QPushButton" name="Admin_Config_pushButton_Serie">
+           <property name="text">
+            <string>Conectar</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_serie">
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Estado &gt;&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPlainTextEdit" name="Admin_Config_plainTextEdit_Serie"/>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_ID_Admin">
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+        <strikeout>false</strikeout>
+       </font>
+      </property>
+      <property name="text">
+       <string>ID del Admin: 0</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="Admin_pushButton_Exit">
+      <property name="text">
+       <string>Salir</string>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <property name="autoRepeat">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+   <zorder>Admin_pushButton_Exit</zorder>
+   <zorder>Admin_tabWidget</zorder>
+   <zorder>label_ID_Admin</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
